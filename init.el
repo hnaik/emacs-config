@@ -34,7 +34,7 @@ There are two things you can do about this warning:
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (clang-format+ blacken dashboard sr-speedbar folding py-autopep8 treemacs-projectile treemacs helm cmake-project cmake-mode cmake-ide lsp-ui company-lsp lsp-mode load-dir fill-column-indicator smooth-scrolling system-packages)))
+    (helm-swoop helm-ag clang-format+ blacken dashboard sr-speedbar folding py-autopep8 treemacs-projectile treemacs helm cmake-project cmake-mode cmake-ide lsp-ui company-lsp lsp-mode load-dir fill-column-indicator smooth-scrolling system-packages)))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 10000)
  '(smooth-scroll-mode t)
@@ -45,7 +45,7 @@ There are two things you can do about this warning:
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Hack" :foundry "SRC" :slant normal :weight normal :height 128 :width normal)))))
+ '(default ((t (:family "Source Code Pro" :foundry "ADBO" :slant normal :weight normal :height 102 :width normal)))))
 
 (setq make-backup-files nil)
 (setq-default cursor-type 'bar)
@@ -59,6 +59,8 @@ There are two things you can do about this warning:
 (setq initial-scratch-message "")
 
 (global-set-key (kbd "C-x C-b") 'buffer-menu)
+(global-set-key (kbd "C-S-s") 'helm-swoop)
+(global-set-key (kbd "C-S-x C-S-f") 'helm-do-ag)
 
 (setq-default fill-column 80)
 (setq fci-rule-width 1)
