@@ -34,7 +34,7 @@ There are two things you can do about this warning:
  '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
-    (helm-swoop helm-ag clang-format+ blacken dashboard sr-speedbar folding py-autopep8 treemacs-projectile treemacs helm cmake-project cmake-mode cmake-ide lsp-ui company-lsp lsp-mode load-dir fill-column-indicator smooth-scrolling system-packages)))
+    (cmake-font-lock helm-swoop helm-ag clang-format+ blacken dashboard sr-speedbar folding py-autopep8 treemacs-projectile treemacs helm cmake-project cmake-mode cmake-ide lsp-ui company-lsp lsp-mode load-dir fill-column-indicator smooth-scrolling system-packages)))
  '(scroll-bar-mode nil)
  '(scroll-conservatively 10000)
  '(smooth-scroll-mode t)
